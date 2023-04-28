@@ -10160,10 +10160,10 @@
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
 
-"react-toastify@^9.0.1":
-  "integrity" "sha512-PBfzXO5jMGEtdYR5jxrORlNZZe/EuOkwvwKijMatsZZm8IZwLj01YvobeJYNjFcA6uy6CVrx2fzL9GWbhWPTDA=="
-  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.1.2.tgz"
-  "version" "9.1.2"
+"react-toastify@^8.0.0":
+  "integrity" "sha512-7a5uhwbJ5Ivp5QyJN8P9M8g+7wksJt51QuYAZW0c3pDOh0Jx8lH7XzNHzzJg4NHup9n4zcqH9rwXknnyzYg2OA=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-8.0.0.tgz"
+  "version" "8.0.0"
   dependencies:
     "clsx" "^1.1.1"
 

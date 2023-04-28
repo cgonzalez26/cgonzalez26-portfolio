@@ -9,9 +9,9 @@ import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
 const AppHeader = () => {
-	const [showMenu, setShowMenu] = useState(true);
+	const [showMenu, setShowMenu] = useState(false);
 	const [showModal, setShowModal] = useState(false);
-	const [showChangeTheme] = useState(false);
+	const [showChangeTheme] = useState(true);
 	const [showHireMe] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 		
@@ -165,27 +165,27 @@ const AppHeader = () => {
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						Projects
+						Proyectos
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="About Me"
 					>
-						About Me
+						Acerca de mi
 					</Link>
 					<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
-						Contact
+						Contacto
 					</Link>
 				</div>
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					<div className="hidden md:flex">
+					<div className="hidden">
 						<span
 							onClick={showHireMeModal}
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"

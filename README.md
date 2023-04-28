@@ -4,7 +4,7 @@ Este mi Portfolio desarrollado con React.
 
 ### [live preview](https://cgonzalez26.github.io)
 
-[![react portfolio](src/assets/images/cgonzalez26_portfolio.JPG)](https://cgonzalez26.github.io)
+[![react portfolio](src/images/cgonzalez26_portfolio.JPG)](https://cgonzalez26.github.io)
 
 ### Características
 

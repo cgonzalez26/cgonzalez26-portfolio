@@ -3,8 +3,8 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo_portfolio.jpg';
+import logoLight from '../../images/logo_light.jpg';
+import logoDark from '../../images/logo_dark.jpg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 

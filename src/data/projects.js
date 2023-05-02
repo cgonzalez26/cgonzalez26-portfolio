@@ -7,7 +7,7 @@ import WebImage4 from '../images/Home_libdelestudiante.jpg';
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Web Site FreeSalta',
+		title: 'FreeSalta',
 		category: 'Web Site',
 		img: WebImage1,
 		ProjectHeader: {
@@ -19,7 +19,7 @@ export const projectsData = [
 	},
 	{
 		id: 2,
-		title: 'Web Site Secytec',
+		title: 'Secytec',
 		category: 'Web Site',
 		img: WebImage2,
 		urlgit: 'https://github.com/cgonzalez26/Secytec',
@@ -33,7 +33,7 @@ export const projectsData = [
 	},
 	{
 		id: 4,
-		title: 'Web Site Libreria del Estudiante',
+		title: 'Libreria del Estudiante',
 		category: 'Web Site',
 		img: WebImage4,
 		urlgit: 'https://github.com/cgonzalez26/libreriadelestudiante.com',

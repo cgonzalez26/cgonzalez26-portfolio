@@ -416,6 +416,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
+.ocultar {
+  display: none;
+}
+
 @media (min-width: 640px) {
 
   .container {
@@ -1167,6 +1172,9 @@ Ensure the default browser behavior of the `hidden` attribute.
       padding-right: 8rem;
       padding-left: 8rem;
     }
+  }
+  .sm\:mostrar {
+    display: flex;
   }
 
   .sm\:mx-auto {

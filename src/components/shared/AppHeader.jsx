@@ -159,7 +159,7 @@ const AppHeader = () => {
 				</div>
 
 				{/* Header links large screen */}
-				<div className="font-general-medium m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
+				<div className="ocultar sm:mostrar font-general-medium m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<Link
 						to="/projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
@@ -184,7 +184,12 @@ const AppHeader = () => {
 				</div>
 
 				{/* Header right section buttons */}
-				<div className="sm:flex justify-between items-center flex-col md:flex-row">
+				<div className={
+						showChangeTheme
+						? "ocultar sm:mostrar sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
+						: "hidden"
+					}
+				>
 					<div className="hidden">
 						<span
 							onClick={showHireMeModal}
@@ -199,7 +204,11 @@ const AppHeader = () => {
 					<div
 						onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher"
-						className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+						className={
+							showChangeTheme
+								? "ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+								: "hidden"
+						}
 					>
 						{activeTheme === 'dark' ? (
 							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />

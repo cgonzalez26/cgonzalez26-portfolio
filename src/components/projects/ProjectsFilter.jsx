@@ -1,6 +1,7 @@
 const selectOptions = [
 	'Web Application',
-	'Web Site'
+	'Web Site',
+	'API Rest'
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {

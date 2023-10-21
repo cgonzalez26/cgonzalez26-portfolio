@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 const selectOptions = [
 	'Web Application',
 	'Web Site',
@@ -5,6 +7,7 @@ const selectOptions = [
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {
+	const { t } = useTranslation();
 	return (
 		<select
 			onChange={(e) => {
@@ -27,7 +30,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
             "
 		>
 			<option value={setSelectProject} className="text-sm sm:text-md">
-				Todos los Proyectos
+				{t('project.all_proyects')}
 			</option>
 
 			{selectOptions.map((option) => (

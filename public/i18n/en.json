@@ -1,0 +1,79 @@
+{
+    "banner" : {
+        "title": "Hi, I'm Cristian González!",
+        "introduction": "I am a Web Programmer | Backend Programmer | Programming Instructor",
+        "download": "Download Resume"
+    },
+    "footer" : {
+        "follow": "Follow me"
+    },
+    "menu" : {
+        "projects": "Projects",
+        "about": "About me",
+        "contact": "Contact"
+    },
+    "contact" : {
+        "title": "Contact Form",
+        "field_name": "Name",
+        "field_name_your": "Your Name",
+        "field_mail": "E-mail",
+        "field_mail_your": "Your E-mail",
+        "field_theme": "Theme",
+        "field_message": "Message",
+        "button_send": "Send",
+        "details": "Contact Details"
+    },
+    "aboutMe" : {
+        "bio": "I have a degree in Systems Analysis, I studied at the National University of Salta, I like Technology, Programming and Soccer. I currently work in the Public Ministry of the Government of the Province of Salta, Argentina. I am learning Programming with MEAN Technologies (Mongodb, Express, Angular, Node)."
+    },
+    "project" : {
+        "title": "Projects",
+        "title_search" : "Search Projects by Title or Categories",
+        "textbox_search" : "Search Projects",
+        "all_proyects" : "All projects"
+    },
+    "projects" : [ 
+        {        
+            "id" : 1,
+            "title" : "FreeSalta",
+            "category" : "Web Site",
+            "img" : "../images/Home_Freesalta.jpg",        
+            "urlgit" : "https://github.com/cgonzalez26/FreeSalta"
+        },
+        {
+            "id" : 2,
+            "title" : "Secytec",
+            "category" : "Web Site",
+            "img" : "../images/Home_Secytec.jpg",
+            "urlgit" : "https://github.com/cgonzalez26/Secytec"
+        },
+        {
+            "id" : 3,
+            "title" : "Sms Admin",
+            "category" : "Web Application",
+            "img" : "../images/Login_SmsAdmin.jpg",
+            "urlgit" : "https://github.com/cgonzalez26/SmsGestion"
+        },
+        {
+            "id" : 4,
+            "title" : "Student Library",
+            "category" : "Web Site",
+            "img" : "../images/Home_libdelestudiante.jpg",
+            "urlgit" : "https://github.com/cgonzalez26/libreriadelestudiante.com"
+        },
+        {
+            "id" : 5,
+            "title" : "Citizen's Website",
+            "category" : "Web Site",
+            "img" : "../images/Home_CiudadanoWeb.jpg",
+            "urlgit" : "https://github.com/cgonzalez26/Ciudadano.Web"
+        },
+        {
+            "id" : 6,
+            "title" : "API Rest of Citizen's Website",
+            "category" : "API Rest",
+            "img" : "../images/CiudadanoApi.jpg",
+            "urlgit" : "https://github.com/cgonzalez26/Ciudadano.api"
+        }
+    ]   
+}

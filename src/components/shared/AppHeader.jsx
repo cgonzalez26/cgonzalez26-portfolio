@@ -7,6 +7,8 @@ import logoLight from '../../images/logo_light.jpg';
 import logoDark from '../../images/logo_dark.jpg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
+import { useTranslation } from 'react-i18next';
+import { LANGUAGES } from "../../data/languages";
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -14,7 +16,13 @@ const AppHeader = () => {
 	const [showChangeTheme] = useState(true);
 	const [showHireMe] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
-		
+
+	const { i18n, t } = useTranslation();
+	
+	const onChangeLang = (e) => {
+		const newLang = e.target.value;
+		i18n.changeLanguage(newLang);
+	  };
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -90,7 +98,15 @@ const AppHeader = () => {
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 						)}
 					</div>
-
+					<div className="sm:hidden">
+						<select defaultValue={i18n.language} onChange={onChangeLang}>
+							{LANGUAGES.map(({ code, label }) => (
+							<option key={code} value={code}>
+								{label}
+							</option>
+							))}
+						</select>
+					</div>
 					{/* Small screen hamburger menu */}
 					<div className="sm:hidden">
 						<button
@@ -127,21 +143,21 @@ const AppHeader = () => {
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						Proyectos
+						{t('menu.projects')}
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
 					>
-						Acerca de mi
+						{t('menu.about')}
 					</Link>
 					<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Contact"
 					>
-						Contacto
+						{t('menu.contact')}
 					</Link>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<span
@@ -165,21 +181,21 @@ const AppHeader = () => {
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						Proyectos
+						{t('menu.projects')}
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="About Me"
 					>
-						Acerca de mi
+						{t('menu.about')}
 					</Link>
 					<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
-						Contacto
+						{t('menu.contact')}
 					</Link>
 				</div>
 
@@ -216,6 +232,13 @@ const AppHeader = () => {
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 						)}
 					</div>
+					<select defaultValue={i18n.language} onChange={onChangeLang}>
+						{LANGUAGES.map(({ code, label }) => (
+						<option key={code} value={code}>
+							{label}
+						</option>
+						))}
+					</select>
 				</div>
 			</div>
 			{/* Hire me modal */}

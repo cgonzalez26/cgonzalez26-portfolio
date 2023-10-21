@@ -3,8 +3,10 @@ import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsGrid = () => {
+	const { t } = useTranslation();
 	const {
 		projects,
 		searchProject,
@@ -19,7 +21,7 @@ const ProjectsGrid = () => {
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
 			<div className="text-center">
 				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-					Proyectos
+				{t('project.title')}
 				</p>
 			</div>
 
@@ -33,7 +35,7 @@ const ProjectsGrid = () => {
                         mb-3
                         "
 				>
-					Buscar Proyectos por Título o Categorías
+					{t('project.title_search')}
 				</h3>
 				<div
 					className="
@@ -84,7 +86,7 @@ const ProjectsGrid = () => {
 							name="name"
 							type="search"
 							required=""
-							placeholder="Buscar Proyectos"
+							placeholder={t('project.textbox_search')}
 							aria-label="Name"
 						/>
 					</div>

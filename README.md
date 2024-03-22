@@ -12,17 +12,17 @@ Este mi Portfolio desarrollado con React.
 - Diseño en Múltiples Pages.
 - Formulario de Contacto con EmailJs
 
-### Setup
+### Instalación
 
-Get the code
+Obtener código fuente
 
 <pre>git clone https://github.com/cgonzalez26/cgonzalez26-portfolio.git</pre>
  
-Install required dependencies
+Instalar dependencias requeridas
 
 <pre>yarn install</pre>
 
 
-Start the server
+Iniciar el server
 
 <pre>yarn start</pre>

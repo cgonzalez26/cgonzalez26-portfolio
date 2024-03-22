@@ -21,7 +21,9 @@
         "field_theme": "Tema",
         "field_message": "Mensaje",
         "button_send": "Enviar",
-        "details": "Detalles de Contacto"    
+        "details": "Detalles de Contacto",
+        "message_success": "¡Tu mensaje ha sido enviado exitosamente!",
+        "message_error": "Algo salió mal. Por favor, inténtelo de nuevo más tarde"
     },
     "aboutMe" : {
         "bio": "Soy Licenciado en Análisis de Sistemas, estudié en la Universidad Nacional de Salta, me gusta la Tecnología, la Programación y el Futbol. Actualmente trabajo en el Ministerio Público del Govierno de la Provincia de Salta, Argentina. Me encuentro aprendiendo Programación con las Tecnologías MEAN(Mongodb, Express, Angular, Node)."

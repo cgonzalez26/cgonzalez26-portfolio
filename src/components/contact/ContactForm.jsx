@@ -14,7 +14,7 @@ const ContactForm = () => {
 
 	const notifySuccess = () => {
 		console.log('entro msje exito');
-        toast.success('¡Tu mensaje ha sido enviado exitosamente!', {
+        toast.success(t('contact.message_success'), {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 3000,
             hideProgressBar: false,
@@ -26,7 +26,7 @@ const ContactForm = () => {
     };
     const notifyError = () => {
 		console.log('entro msje error');
-        toast.error('Algo salió mal. Por favor, inténtelo de nuevo más tarde', {
+        toast.error(t('contact.message_error'), {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 2000,
             hideProgressBar: false,

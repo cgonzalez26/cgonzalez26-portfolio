@@ -21,7 +21,9 @@
         "field_theme": "Theme",
         "field_message": "Message",
         "button_send": "Send",
-        "details": "Contact Details"
+        "details": "Contact Details",
+        "message_success": "Your message has been sent successfully!",
+        "message_error": "Something went wrong. Please try again later"
     },
     "aboutMe" : {
         "bio": "I have a degree in Systems Analysis, I studied at the National University of Salta, I like Technology, Programming and Soccer. I currently work in the Public Ministry of the Government of the Province of Salta, Argentina. I am learning Programming with MEAN Technologies (Mongodb, Express, Angular, Node)."
